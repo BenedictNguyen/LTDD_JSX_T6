@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, Image, StyleSheet, TouchableOpacity, ActivityIndicator, ImageComponent } from 'react-native';
-import Arrow1 from './assets/screen1/arrow2.png';
-import Home from './assets/screen1/home.png';
-import Index from './assets/screen1/index2.png';
-import Arrow2 from './assets/screen1/arrow.png';
-import GioHang from './assets/screen1/giohang.png';
+import Arrow1 from '../assets/screen1/arrow2.png';
+import Home from '../assets/screen1/home.png';
+import Index from '../assets/screen1/index2.png';
+import Arrow2 from '../assets/screen1/arrow.png';
+import GioHang from '../assets/screen1/giohang.png';
 const Screen2 = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -81,8 +81,7 @@ const Screen2 = () => {
 
 const styles = StyleSheet.create({
   container: {
-    //flex: 1,
-    flexDirection: 'column',
+    flex: 1,
     backgroundColor: 'black', 
   },
   itemContainer: {
@@ -92,18 +91,13 @@ const styles = StyleSheet.create({
     borderBottomColor: '#333', 
     alignItems: 'center',
   },
-  subItem: {
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
   taskBar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: 'red',
     height: 50,
-    marginTop: 20
+    //marginTop: 20
   },
   // Begin header: taskbar
   taskBarHeadedArrow: {
